@@ -8,11 +8,6 @@ class ReviewsController < ApplicationController
     render json: @reviews
   end
 
-  # GET /reviews/1
-  def show
-    render json: @review
-  end
-
   # POST /reviews
   def create
     @review = Review.new(review_params)
